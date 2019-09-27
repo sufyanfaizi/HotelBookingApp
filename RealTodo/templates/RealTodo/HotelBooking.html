@@ -1,0 +1,37 @@
+
+{% extends 'base2.html' %}
+
+
+
+{% load crispy_forms_tags %}
+  
+{% block main %}
+
+
+  
+
+
+
+  
+    
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+    
+    {{ form|crispy }}
+    
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+
+
+
+
+<p> </p>
+ <!--<button onclick="window.location.href = '/accounts/logout';" class="btn btn-danger">Log Out</button>-->
+
+
+ {% endblock %}
+
+
+
+

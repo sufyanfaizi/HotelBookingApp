@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block main %}
+
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="search" placeholder="To-Do Title" aria-label="Search" name="title">
+    <input type="search" placeholder="To-Do Text" aria-label="Search" name="text">
+    <button type="submit">Add To List</button>
+</form>
+
+<p> </p>
+
+{% for task in det %}
+    <li><a href="{{ task.id }}"> {{ task.title }} </a></li>
+    
+{% endfor %}
+
+
+<p> </p>
+ <button onclick="window.location.href = '/accounts/logout';" class="btn btn-danger">Log Out</button>
+
+ {% endblock %}
