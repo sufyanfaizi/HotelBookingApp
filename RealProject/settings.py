@@ -131,6 +131,6 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'RealTodo/static'),
+    os.path.join(PROJECT_ROOT, 'RealProject/RealTodo/static'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
