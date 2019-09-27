@@ -1,2 +1,2 @@
-web: gunicorn RealProject.wsgi --log-file -
+web: gunicorn RealProject.wsgi
 
