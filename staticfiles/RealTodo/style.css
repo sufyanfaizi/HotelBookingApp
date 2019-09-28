@@ -1,0 +1,14 @@
+body {
+
+    background: url("images/img17.jpeg");
+    
+    
+}
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.jumbotron {
+    background-image: url("images/sunset.jpg");
+    background-size: cover;
+  }
