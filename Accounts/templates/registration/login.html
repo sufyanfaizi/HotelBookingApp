@@ -4,13 +4,14 @@
 {% block main %}
 <div class="card">
 <div class="card-body">
-<h4 class="card-title">Log in to your account</h4>
+<h4 style="font-family:'Times New Roman'" class="text-center" class="card-title"><b>Login to your account</b></h4>
 
 <form method="post">
 {% csrf_token %}
 <input type="hidden" name="next" value="{{ next }}">
 
 {{ form|crispy }}
+
 
 <button type="submit" class="btn btn-primary btn-block">Log in</button>
 <button onclick="window.location.href = '/accounts/signup';" class="btn btn-primary btn-block">Sign up</button>
