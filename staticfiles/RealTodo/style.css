@@ -1,0 +1,19 @@
+body {
+
+    background: url("images/img17.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.jumbotron {
+    background-image: url("images/sunset.jpg");
+    background-size: cover;
+  }
+
+    
+
+
+
+
