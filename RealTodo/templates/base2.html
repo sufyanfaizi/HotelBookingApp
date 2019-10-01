@@ -1,10 +1,9 @@
-
 {% load staticfiles %}
-
+<html>
 
 <link rel="stylesheet" type="text/css" href="{% static 'RealTodo/style.css' %}"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
+<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
   
@@ -66,34 +65,29 @@
               <button onclick="window.location.href = '/accounts/signup';" class="btn btn-outline-info">Signup</button>
 
           </ul>
-
-    
-          <!-- Dropdown -->
-          
-          
-          
-    
-        <!-- Links -->
-    
-        
-      <!--</div>-->
-              <!-- Collapsible content -->
+                  <!-- Collapsible content -->
     
     </nav>
     <!--/.Navbar-->
-    
-    <div class="jumbotron">
 
-        <h1 class="display-4">Hotels Inn!</h1>
-        <p class="lead">Welcome to Hotels Inn, you can get maximum benifits and features.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="{% url 'AboutUs' %}" role="button">Learn more</a>
-        </p>
+
+    
+    <div class="jumbotron jumbotron-fluid">
+        
+        <div class="container">
+            <h1 class="display-4">Hotels Inn!</h1>
+            <p class="lead">Welcome to Hotels Inn, you can get maximum benifits and features.</p>
+            <hr class="my-4">
+            <p>Hotels Inn give you this platform to book hotels room with different categories</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="{% url 'AboutUs' %}" role="button">Read more</a>
+            </p>      
+            </div>
       </div>
 
+
       
+    
 
       
 
@@ -104,6 +98,8 @@
 </head>
 
 <body>
+    
+    
   <div  class="container">
     <div  class="row justify-content-center">
       <div  class="col-4">
@@ -125,3 +121,4 @@
   
   </footer>
   <!-- Footer -->
+  </html>

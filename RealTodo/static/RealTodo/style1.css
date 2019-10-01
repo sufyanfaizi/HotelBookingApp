@@ -1,6 +1,10 @@
 body {
 
     background: url("images/img25.jpg");
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
+
+  

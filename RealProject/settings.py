@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rglj+dnz!*(@p287q^x=y!m)iso(63wk##vp67@rr%1_)s^$7a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 #Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'RealTodo/static'),
+    os.path.join(BASE_DIR, 'Realtodo/static'),
     )
  
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
