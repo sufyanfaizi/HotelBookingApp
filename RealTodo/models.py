@@ -22,6 +22,7 @@ class NewTodo(models.Model):
         return self.title + ' | ' + self.created_by.username
 
 
+
 class HotelBooking(models.Model):
     name = models.CharField(max_length=200)
     booking_details = models.TextField(max_length=200)

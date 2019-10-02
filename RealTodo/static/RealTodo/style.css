@@ -4,7 +4,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
     
+
+}
+
+.h3 {
+    font-family: 'Sofia';font-size: 22px;
+
+
+
+}
+
+.menubar {
+    font-family: 'Times New Roman';font-size: 18px;
+
+    
+}
+.p{
+    font-family: 'Times New Roman';
+    font-size: 18px;
 }
 
 .jumbotron {

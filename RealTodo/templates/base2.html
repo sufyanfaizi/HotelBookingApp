@@ -1,14 +1,19 @@
 {% load staticfiles %}
 <html>
 
-<link rel="stylesheet" type="text/css" href="{% static 'RealTodo/style.css' %}"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'RealTodo/style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
   
     
   <!--Navbar-->
+  <div class="menubar">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
       <!-- Navbar brand -->
@@ -44,6 +49,7 @@
             <form class="form-inline">
                 <div class="md-form my-0">
                   <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </div>
         
@@ -68,21 +74,25 @@
                   <!-- Collapsible content -->
     
     </nav>
+  </div>
     <!--/.Navbar-->
-
-
+    
     
     <div class="jumbotron jumbotron-fluid">
         
         <div class="container">
+          <div class="h3">
             <h1 class="display-4">Hotels Inn!</h1>
+          </div>
+        <div class="p">
             <p class="lead">Welcome to Hotels Inn, you can get maximum benifits and features.</p>
             <hr class="my-4">
             <p>Hotels Inn give you this platform to book hotels room with different categories</p>
             <p class="lead">
               <a class="btn btn-primary btn-lg" href="{% url 'AboutUs' %}" role="button">Read more</a>
-            </p>      
-            </div>
+            </p>
+          </div>      
+          </div>
       </div>
 
 
@@ -92,18 +102,20 @@
       
 
 <head>
-
+    
 <title>Hotel booking App</title>
 
 </head>
 
 <body>
-    
-    
+    <div class="h3">
+  <h1 class="text-center"><b>HOTEL BOOKING </b></h1>
+</div>
+
+
   <div  class="container">
     <div  class="row justify-content-center">
       <div  class="col-4">
-      <h3  class="text-center" style="font-family:'Times New Roman'" style="color: black;"><b>HOTEL BOOKING </b></h3>
       {% block main %}
       {% endblock %}
       </div>
